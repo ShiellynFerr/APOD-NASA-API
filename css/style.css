@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Chakra+Petch:wght@300;400;500;600;700&family=Itim&family=Lateef&family=PT+Sans&family=Share+Tech+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url("../img/planet.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.header a {
+    color: #ccc;
+}
+
+.menu  {
+    display: flex;
+    gap: 50px;
+    
+}
+.menu li {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.first-section {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 380px;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.content{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+}
+
+.content p {
+    width: 50%;
+    font-size: 18px;
+    font-family: 'Capriola', sans-serif;
+    color: #ccc;
+}
+
+.button-section {
+    margin-top: 20px;
+}
+
+button {
+    background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
+    background-size: 800% 400%;
+    padding: 1em 2em;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #ccc;
+    transition: all .5s ease-in-out;
+    animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+    cursor: pointer;
+   }
+   
+   button:hover {
+    animation: gradient 3s infinite;
+   }
+   
+   button:active {
+    animation: gradient 3s infinite;
+    transform: scale(0.8);
+   }
+   
+   @keyframes gradient {
+    0% {
+     background-position: 0% 50%;
+    }
+   
+    50% {
+     background-position: 100% 50%;
+    }
+   
+    100% {
+     background-position: 0% 50%;
+    }
+   }
+
+.section-main {
+    height: 600px;
+    background-color: #ccc;
+}
+
