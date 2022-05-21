@@ -43,7 +43,7 @@ body {
 }
 
 .first-section {
-    height: 500px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,10 +84,10 @@ body {
 }
 
 .button-section {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
-button {
+.button-section {
     background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
     background-size: 800% 400%;
     padding: 1em 2em;
@@ -100,13 +100,13 @@ button {
     transition: all .5s ease-in-out;
     animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
     cursor: pointer;
-   }
+}
    
-   button:hover {
+.button-section:hover {
     animation: gradient 3s infinite;
    }
    
-   button:active {
+.button-section:active {
     animation: gradient 3s infinite;
     transform: scale(0.8);
    }
@@ -126,7 +126,86 @@ button {
    }
 
 .section-main {
-    height: 600px;
+    height: 900px;
     background-color: #ccc;
 }
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-form h3 {
+   margin-top: 20px;
+   font-size: 24px;
+   letter-spacing: 1px;
+   font-family: 'Lateef', cursive;
+}
 
+.form {
+    display: flex;
+    margin-top: 20px;
+}
+
+.input-date{
+    height: 30px;
+    width: 140px;
+    border-radius: 10px 0 0;
+    border: 1px solid #0E3B93 ;
+    font-size: 18px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.button-form {
+    width: 45px;
+    height: 30px;
+    padding: 0px 10px;
+    border-radius: 0 0 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #0E3B93;
+    color: #fff;
+}
+
+.div-info {
+    margin-top: 10px;
+    height: 650px;
+}
+.div-info .image {
+    width: 550px;
+    height: 350px;
+    border-radius: 8px;
+    display: none;
+    margin-bottom: 20px;
+}
+
+.iframa-video {
+    border: none;
+    width: 550px;
+    height: 350px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.container-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-info .title {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 30px;
+    margin: 20px 0;
+}
+.container-info .text {
+    margin-top: 5px;
+    width: 60%;
+    font-size: 18px;
+    font-family: 'PT Sans', sans-serif;
+    
+}
