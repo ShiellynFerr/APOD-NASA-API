@@ -16,9 +16,9 @@ a {
 
 body {
     background-image: url("../img/planet.jpg");
-    background-position: center;
-    background-attachment: fixed;
+    background-position: center center;
     background-size: cover;
+    background-attachment: fixed;
 }
 .header {
     display: flex;
@@ -65,19 +65,20 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
     font-family: 'Chakra Petch', sans-serif;
+    color: #000;
 }
 
 .content{
     height: 200px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 90%;
 }
 
 .content p {
-    width: 50%;
+    margin-top: 20px;
     font-size: 18px;
     font-family: 'Capriola', sans-serif;
     color: #ccc;
